@@ -1,0 +1,13 @@
+[package]
+name = "sage-decoder"
+version = "0.1.0"
+description = "Carbon Decoder for the Sage program"
+edition = "2024"
+
+[dependencies]
+carbon-core = { workspace = true }
+serde = { workspace = true }
+serde-big-array = { workspace = true }
+solana-account = { workspace = true }
+solana-instruction = { workspace = true }
+solana-pubkey = { workspace = true }
