@@ -1,0 +1,27 @@
+[package]
+name = "sa-carbon"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+async-trait = "0.1.86"
+carbon-core = "0.8.1"
+carbon-log-metrics = "0.8.1"
+carbon-rpc-program-subscribe-datasource = "0.8.1"
+dotenv = "0.15.0"
+env_logger = "0.11.8"
+log = "0.4.27"
+serde = { version = "1.0.219", features = ["derive"] }
+serde-big-array = "0.5.1"
+solana-account = "2.2.1"
+solana-account-decoder = "2.2"
+solana-client = "2.2"
+solana-instruction = { version = "2.2", default-features = false }
+solana-pubkey = { version = "2.2.0", features = [
+    "serde",
+    "borsh",
+    "curve25519",
+] }
+tokio = { version = "1.45.1", features = ["full"] }
+tokio-util = "0.7.15"
