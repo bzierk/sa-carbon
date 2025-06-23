@@ -11,8 +11,12 @@ dotenv = { workspace = true }
 env_logger = { workspace = true }
 carbon-log-metrics = { workspace = true }
 carbon-rpc-program-subscribe-datasource = { workspace = true }
+carbon-rpc-transaction-crawler-datasource = { workspace = true }
+carbon-yellowstone-grpc-datasource = { workspace = true }
 log = { workspace = true }
 sage-decoder = { path = "../decoders/sage-decoder" }
 solana-account-decoder = { workspace = true }
 solana-client = { workspace = true }
+solana-commitment-config = { workspace = true }
 tokio = { workspace = true }
+yellowstone-grpc-proto = { workspace = true }

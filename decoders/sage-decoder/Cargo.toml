@@ -6,6 +6,7 @@ edition = "2024"
 
 [dependencies]
 carbon-core = { workspace = true }
+log = { workspace = true }
 serde = { workspace = true }
 serde-big-array = { workspace = true }
 solana-account = { workspace = true }

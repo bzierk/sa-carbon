@@ -12,6 +12,8 @@ async-trait = "0.1.86"
 carbon-core = "0.8.1"
 carbon-log-metrics = "0.8.1"
 carbon-rpc-program-subscribe-datasource = "0.8.1"
+carbon-rpc-transaction-crawler-datasource = "0.8.1"
+carbon-yellowstone-grpc-datasource = "0.8.1"
 dotenv = "0.15.0"
 env_logger = "0.11.8"
 log = "0.4.27"
@@ -20,6 +22,7 @@ serde-big-array = "0.5.1"
 solana-account = "2.2.1"
 solana-account-decoder = "2.2"
 solana-client = "2.2"
+solana-commitment-config = "2.2"
 solana-instruction = { version = "2.2", default-features = false }
 solana-pubkey = { version = "2.2.0", features = [
     "serde",
@@ -28,3 +31,4 @@ solana-pubkey = { version = "2.2.0", features = [
 ] }
 tokio = { version = "1.45.1", features = ["full"] }
 tokio-util = "0.7.15"
+yellowstone-grpc-proto = "6.1.0"
