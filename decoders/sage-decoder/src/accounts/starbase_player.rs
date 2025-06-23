@@ -1,7 +1,4 @@
-use carbon_core::{
-    CarbonDeserialize,
-    borsh::{self, BorshDeserialize},
-};
+use carbon_core::borsh::{self, BorshDeserialize};
 
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
 
