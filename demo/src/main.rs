@@ -7,11 +7,8 @@ use std::{
 
 use async_trait::async_trait;
 use carbon_core::{
-    account::AccountProcessorInputType,
-    error::CarbonResult,
-    instruction::InstructionProcessorInputType,
-    metrics::{self, MetricsCollection},
-    pipeline::Pipeline,
+    account::AccountProcessorInputType, error::CarbonResult,
+    instruction::InstructionProcessorInputType, metrics::MetricsCollection, pipeline::Pipeline,
     processor::Processor,
 };
 use carbon_log_metrics::LogMetrics;
@@ -38,7 +35,10 @@ enum DatasourceType {
 
 impl DatasourceType {
     fn from_env() -> Self {
-        match env::var("DATASOURCE_TYPE").unwrap_or_default().as_str() {
+        match env::var("DATASOURCE_TYPE")
+            .unwrap_or("subscribe".to_string())
+            .as_str()
+        {
             "transaction_crawler" | "crawler" => Self::TransactionCrawler,
             "geyser" | "grpc" | "yellowstone" => Self::Geyser,
             "program_subscribe" | "subscribe" => Self::ProgramSubscribe,
